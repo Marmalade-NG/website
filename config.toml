@@ -1,0 +1,109 @@
+baseurl = "https://beta.marmalade-ng.xyz"
+metaDataFormat = "yaml"
+title = "Marmalade NG"
+theme = "blist"
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
+enableEmoji = true
+
+[languages.en]
+contentDir = "content/en"
+weight = 1
+languageName = "English"
+
+  [languages.en.params]
+  introTitle = "Marmalade NG"
+  introSubtitle = "A community NFTs Ledger for Kadena"
+  introPhoto = "/logo.jpg"
+  logo = "/marm_ng_full_logo.png"
+
+[[languages.en.menu.main]]
+name = "Repository"
+url = "https://github.com/Marmalade-NG/marmalade-ng/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Bridge"
+url = "https://bridge.marmalade-ng.xyz"
+weight = 50
+
+[[languages.en.menu.main]]
+name = "Admin tool"
+url = "https://admin.marmalade-ng.xyz"
+weight = 60
+
+[[languages.en.menu.main]]
+name = "Explorer"
+url = "https://explorer.marmalade-ng.xyz"
+weight = 30
+
+[[languages.en.menu.main]]
+name = "Kdafs (KIP 25) App"
+url = "https://kdafs-dapp.marmalade-ng.xyz/"
+weight = 40
+
+[[languages.en.menu.main]]
+name = "Documentation"
+url = "https://marmalade-ng.readthedocs.io"
+weight = 20
+
+[params]
+darkModeToggle = true
+enableSearch = true
+searchKeys = [
+  "tags",
+  "date",
+  "categories",
+  "summary",
+  "content",
+  "link",
+  "author"
+]
+copyright = "Copyright © 2024 - CryptoPascal"
+favicon = "/favicon.ico"
+ascentColor = "bg-indigo-100"
+frontBundle = "articles"
+hideMeta = true
+hideOtherLanguages = true
+toc = true
+hidePageThumbnail = false
+
+  [params.comments]
+  system = ""
+  repo = ""
+  repoid = ""
+  category = ""
+  categoryid = ""
+  mapping = ""
+  strict = ""
+  reactionsenabled = ""
+  emitmetadata = ""
+  inputposition = ""
+  theme = ""
+
+[params.homepage.social]
+title = "Social links"
+
+  [[params.homepage.social.icons]]
+  website = "twitter"
+  url = "https://twitter.com/marmalade_ng"
+
+  [[params.homepage.social.icons]]
+  website = "telegram"
+  url = "https://t.me/+w239Fgk4OTMzNTRh"
+
+  [[params.homepage.social.icons]]
+  website = "github"
+  url = "https://github.com/Marmalade-NG"
+
+[build]
+writeStats = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[markup.highlight]
+style = "dracula"
+
+[markup.goldmark.renderer]
+unsafe = true

@@ -1,0 +1,4 @@
+{{- $fname:=print "node_modules/bootstrap-icons/icons/" ( .Get 0 ) ".svg" -}}
+{{- $path:="<path" -}}
+{{- $fill:="<path fill=\"currentColor\"" -}}
+{{ replace (readFile $fname) $path $fill | safeHTML }}

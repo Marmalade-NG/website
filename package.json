@@ -1,0 +1,29 @@
+{
+  "name": "marmalade_ng_web",
+  "version": "1.0",
+  "description": "Marmalade NG web",
+  "main": "index.js",
+  "repository": "https://github.com/Marmalade-NG/website",
+  "license": "MIT",
+  "scripts": {
+    "start": "hugo server --disableFastRender",
+    "build": "NODE_ENV=production hugo --gc"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0 ",
+    "postcss-import": "^16.0.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
