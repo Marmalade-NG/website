@@ -107,4 +107,8 @@ Tokens upgrade                                                 | :x:            
 
 (16) : Everything must be implemented by the creator
 
-(17) : Policies can access the quote system => and can't use royalties
+(17) : Policies can't access the quote system => and can't use royalties
+
+(18) : Tokens creator can't refuse newly approved (by who ?) sales mechanisms
+
+(19) : Tokens creators can refuse all new mechanisms, or blacklist them one by one (Extra policies)
